@@ -1,0 +1,493 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-image: url("../images/background.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #000000;
+}
+
+section {
+	margin-bottom: 80px;
+}
+
+
+/*HEADER OF THE PAGES*/
+.toppage {
+	backdrop-filter: blur(10px);
+ 	background-color: rgba(32, 32, 32, 0.5);
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+.bottonpage {
+	backdrop-filter: blur(10px);
+ 	background-color: rgba(32, 32, 32, 0.5);
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	width: 100%;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+.disflex {
+	display: flex;
+}
+
+.disflex2 {
+	display: flex;
+}
+
+#header-nav{
+	border: 0px;
+	border-radius: 0;
+	border: 0;
+}
+
+.center{
+	justify-content: center;
+	margin: auto;
+}
+
+.centerY {
+	position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centerbig{
+	justify-content: center;
+	margin: auto;
+}
+
+/*PRINCIPAL - PRESENTATION*/
+.linktext {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+}
+.linktext:hover { 
+	color: #009EFF; 
+	text-decoration: none;
+}
+
+.h2text {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #ffffff;
+	font-size: 60px;
+}
+
+.h3text {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+}
+.esloganBox {
+	text-align: center;
+	width: 100%;
+	border-radius: 15px; 
+	margin-bottom: 5px;
+	font-size: 30px;
+	color: #FFFFFF
+}
+.esloganBox span {
+	font-size: 30px;
+	color: #009EFF; 
+}
+
+.imageicon {
+	width: 100px;
+	height: 100px;
+	border-radius: 15px;
+}
+
+.box01 {
+	width: 20%;
+	backdrop-filter: blur(10px);
+ 	background-color: rgba(32, 32, 32, 0.5);
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	border-radius: 15px;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.titles {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.titles2 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: arial, serif;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.titles2blue {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: arial, serif;
+	color: #009EFF;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.textnormal {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.textnormalblue {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #009EFF;
+	font-size: 20px;
+}
+
+.socialicon {
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px 10px 10px;
+	border-radius: 20px;
+}
+
+.socialicon2 {
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px 10px 10px;
+	border-radius: 20px;
+}
+
+.socialicon:hover {
+	box-shadow: 0px 14px 20px -6px #009EFF;
+}
+.socialicon2:hover {
+	box-shadow: 0px 14px 20px -6px #009EFF;
+}
+
+.generallogo {
+	margin:auto;
+	display:block;
+	width: 300px;
+	height: 300px;
+}
+
+
+/*Sections*/
+.solidsection {
+	backdrop-filter: blur(10px);
+ 	background-color: rgba(32, 32, 32, 0.5);
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	border-radius: 15px;
+	width: 90%;
+	padding: 20px;
+}
+
+.botton2{
+	padding-top: 30px;
+}
+
+.botton3{
+	padding-top: 70px;
+}
+
+
+.comentariosplace {
+	padding-left: 20px;
+	width: 100%;
+}
+
+.userhead {
+	width: 40px;
+	height: 40px;
+	border-radius: 15px;
+}
+
+.videodiv {
+	width: 70%;
+	display: block;
+}
+
+.morevid {
+	width: 30%;
+	display: block;
+	padding-left: 20px;
+}
+
+.bordered {
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.vacio {
+	background-color:rgba(240, 248, 255, 0);
+	border: 0;
+}
+
+.hr {
+	margin:auto;
+	display:block;
+}
+
+/* PODCASTS */
+.podcastcard {
+ 	background-color: white;
+	border-radius: 15px;
+	width: 200px;
+	height: 250px;
+	margin: auto;
+	justify-content: center;
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	overflow: hidden;
+}
+
+.podcastcard:hover {
+	box-shadow: 0px 14px 40px -6px #009EFF;
+}
+
+.podcastcard2 {
+	background-color: white;
+   border-radius: 15px;
+   width: 100%;
+   height: 100px;
+   box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+   overflow: hidden;
+}
+
+.podcastcard2:hover {
+   box-shadow: 0px 14px 40px -6px #009EFF;
+}
+
+.podlogo {
+	width: 100%;
+}
+
+.podlogo2 {
+	height: 100%;
+
+}
+
+.separation {
+	margin: 20px;
+}
+
+.titlesPOD {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #000000;
+	font-size: auto;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.titlesPOD:hover {
+	text-decoration: none;
+}
+
+.titlesPOD2 {
+	margin-top: 10px;
+	font-family: arial, serif;
+	color: #000000;
+	font-size: auto;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.titlesPOD2:hover {
+	text-decoration: none;
+}
+
+.podicon2 {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 0 0 0 0;
+}
+
+.searchpanel {
+	background-color: white;
+	border-radius: 15px;
+	width: 50%;
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	overflow: hidden;
+}
+
+.toppanel {
+	background-color: white;
+	border-radius: 15px;
+	width: 100%;
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	overflow: hidden;
+}
+
+.toppanel:hover {
+	box-shadow: 0px 14px 40px -6px #009EFF;
+}
+.toppanel button {
+	width: 35%;
+	border: 0;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.toppanel button:hover {
+	background-color: #aaaaaa;
+}
+
+#welcome {
+	height: 300px;
+}
+
+.iconspanel {
+	background-color: white;
+	border-radius: 15px;
+	width: 20%;
+	box-shadow: 0px 14px 40px -6px rgba(0,0,0,0.87);
+	overflow: hidden;
+	margin-left: 40%;
+	padding-top: 10px;
+}
+
+.searchpanel button{
+	height: 50px;
+	background-color: grey;
+	border: 0;
+}
+
+.searchpanel button:active {
+	background-color: black;
+}
+
+.searchpanel input {
+	height: 50px;
+}
+
+.framecube{
+	height:"160px"; 
+	width:"100%";
+}
+
+
+/*RESOLUTIONS CHANGES*/
+
+/*Long*/
+@media (min-width: 1200px) {
+
+}
+
+/*mid*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.podcastcard {
+	   width: 150px;
+	   height: 200px;
+   }
+   .iconspanel{
+	margin-left: 35%;
+	width: 25%;
+   }
+
+   .framecube{
+	height:"120px"; 
+	width:"100%";
+	overflow: hidden;
+   }
+}
+
+/*small*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.podcastcard {
+		width: 130px;
+		height: 180px;
+	}
+	.iconspanel{
+		margin-left: 25%;
+		width: 35%;
+	}
+	.titlesPOD2{
+		margin: 0;
+		font-size: 12px;
+	}
+	.comentariosplace{
+		padding: 0;
+	}
+	.framecube{
+		height:"120px"; 
+		width:"100%";
+		overflow: hidden;
+	}
+}
+
+/*very small*/
+@media (max-width: 767px) {
+	.framecube{
+		height:"120px"; 
+		width:"100%";
+		overflow: hidden;
+	}
+	.videodiv{
+		margin-right: 0;
+		width: 100%;
+	}
+	.morevid{
+		margin-right: 0;
+		width: 100%;
+		padding: 0;
+	}
+	.iconspanel{
+		margin-left: 20%;
+		width: 40%;
+	}
+	.podcastcard {
+		width: 150px;
+		height: 200px;
+	}
+	.solidsection {
+		width: 100%;
+	}
+	.titlesPOD2{
+		margin: 0;
+		font-size: 12px;
+	}
+	.comentariosplace{
+		margin: 0;
+		padding: 0;
+	}
+	.centerbig{
+		justify-content: baseline;
+		margin: 0;
+	}
+	.hr{
+		width: 100%;
+	}
+	.box01 {
+		width: 40%;
+	}
+	.disflex2{
+		display:block;
+	}
+	.centerY{
+		position: relative;
+    top: 40px;
+    left: 0;
+    transform: translate(0, 0);
+	}
+	.searchpanel {
+		width: 100%;
+	}
+}

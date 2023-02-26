@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="icon" type="image/png" href="../images/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toppage">
+        <div class="">
+            <p class="linktext text-center">
+                <a href=".." class="linktext">Inicio</a>
+                |
+                <a href="../podcast.html" class="linktext">Podcasts</a>
+            </p>
+        </div>
+    </div>
+    <div id="podcastviewer">
+        <section class="solidsection centerbig botton3">
+            <h2 class="titles2 text-center">Admin Zone</h2>
+            <div class="disflex textnormal toppanel">
+                <button id="uploadbutton">Subir Nuevo Podcast</button>
+                <button id="modifybutton">Modificar Podcast Existente</button>
+                <button id="exitbutton">Cerrar Sesion</button>
+            </div>
+            <hr>
+            <div class="center disflex2">
+                <div id="welcome">
+                    <h2 class="titles2 text-center">Bienvenido al Admin Zone, aqui podras administrar la pagina de podcast JustCoffee 3.0</h2>
+                </div>
+                <div id="upload">
+                    <h2 class="titles2 text-center">Subir un nuevo podcast</h2>
+                    <p class="textnormal text-center">Los parametos marcados con * son obligatorios</p>
+                    <div class="textnormal">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Nombre*</label>
+                          <input type="text" required name="nombre" id="nombre" class="form-control" placeholder="Nombre del Podcast*" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Duracion</label>
+                          <input type="text" required name="duracion" id="duracion" class="form-control" placeholder="Duracion del Podcast* HH:MM:SS" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Descripcion</label>
+                          <textarea type="text" name="descripcion" id="descripcion" rows="3" class="form-control" placeholder="Descripcion del Podcast" aria-describedby="helpId"></textarea>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Embed*</label>
+                          <textarea type="text" required  name="embed" id="embed" rows="3" class="form-control" placeholder="ATENCION: este es el link que anclara el podcast a anchor para que podamos 
+                            escuchar el podcast, el formato debe ser del link sin iframe" aria-describedby="helpId"></textarea>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Link de Spotify</label>
+                          <input type="text" name="spotify" id="spotify" class="form-control" placeholder="Link para ir a spotify desde la pagina" aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <br>
+                          <label for="name">Link de Youtube</label>
+                          <input type="text" name="youtube" id="youtube" class="form-control" placeholder="Link para ir a youtube desde la pagina" aria-describedby="helpId">
+                          <br>
+                        </div>
+                        <button type="summit" class="btn btn-primary" name="accion" id="uploadfinish">Subir Podcast</button>
+                    </div>
+                </div>
+
+                <div id="modify" style="width: 100%;">
+                    <h2 class="titles2 text-center">Modificar los podcasts existentes</h2>
+                    <div class="disflex2">
+                        <div class="videodiv textnormal">
+                            <div id="modifysection">
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Nombre*</label>
+                                  <input type="text" required name="nombre" id="nombre2" class="form-control" placeholder="Nombre del Podcast*" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Duracion</label>
+                                  <input type="text" required name="duracion" id="duracion2" class="form-control" placeholder="Duracion del Podcast* HH:MM:SS" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Descripcion</label>
+                                  <textarea type="text" name="descripcion" id="descripcion2" rows="3" class="form-control" placeholder="Descripcion del Podcast" aria-describedby="helpId"></textarea>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Embed*</label>
+                                  <textarea type="text" required  name="embed" id="embed2" rows="3" class="form-control" placeholder="ATENCION: este es el link que anclara el podcast a anchor para que podamos 
+                                    escuchar el podcast, el formato debe ser del link sin iframe" aria-describedby="helpId"></textarea>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Link de Spotify</label>
+                                  <input type="text" name="spotify" id="spotify2" class="form-control" placeholder="Link para ir a spotify desde la pagina" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <br>
+                                  <label for="name">Link de Youtube</label>
+                                  <input type="text" name="youtube" id="youtube2" class="form-control" placeholder="Link para ir a youtube desde la pagina" aria-describedby="helpId">
+                                  <br>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <br>
+                                  <label for="name">Url de imagen</label>
+                                  <input type="text" name="youtube" id="imagen2" class="form-control" placeholder="Url de el icono del podcast" aria-describedby="helpId">
+                                  <br>
+                                </div>
+                                <button type="summit" class="btn btn-primary" name="accion" id="modifyfinish">Modificar</button>
+                                <p class="textnormal text-center">Administrar comentarios de este podcast</p>
+                                <hr>
+                                <div id="comentariosplace">
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="morevid">
+                            <p class="text-center textnormal">Podcasts Existentes</p>
+                            <hr>
+                            <div id="podcastzone">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../js/adminpage.js"></script>
+</body>
+</html>

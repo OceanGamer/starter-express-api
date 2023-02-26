@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" type="image/png" href="images/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toppage">
+        <div class="">
+            <p class="linktext text-center">
+                <a href="." class="linktext">Inicio</a>
+                |
+                <a href="podcast.html" class="linktext">Podcasts</a>
+            </p>
+        </div>
+    </div>
+    <div id="podcastlibrary">
+        <section class="solidsection centerbig centerY">
+            <h2 class="titles2 text-center">Todos los Podcasts</h2>
+            <div class="disflex textnormal searchpanel center">
+                <input type="text" class="form-control" name='search' placeholder="buscar un podcast..." id="searchinput">
+                <button id="searchbutton">🔍</button>
+            </div>
+            <hr>
+            <div class="center disflex2" id="podcastzone">
+                
+            </div>
+        </section>
+    </div>
+
+    <div id="podcastviewer" class="disflex2 botton2">
+        <section class="solidsection center">
+            <div class="disflex textnormal searchpanel center">
+                <input type="text" class="form-control" name='search' placeholder="buscar un podcast..." id="searchinput2">
+                <button id="searchbutton2">🔍</button>
+            </div>
+            <hr>
+            <div class="disflex2">
+                <div class="videodiv">
+                    <div id="frame" class="framecube">
+                        
+                    </div>
+                    
+                    <div class="disflex">
+                        <div style="width: 40%;">
+                            <h2 class="h3text" id="podname"></h2>
+                        </div>
+                        <div class="iconspanel">
+                            <div class="disflex center" id="podbuttons"> 
+                                
+                            </div>
+                            <p class="text-center textnormal" id="podlikes" style="color: black;"></p>
+                        </div>
+                    </div>
+                    <p class="textnormal" id="podduracion"></p>
+                    <p class="textnormal" id="poddescripcion"></p>
+
+                    <hr>
+                    <div id="comen">
+                    <p class="textnormal">Envia un comentario</p>
+                    <div class="textnormal">
+                        <label for="ccname" class="textnormal">Nombre</label>
+						<input type="text" class="form-control" name="ccname" id="ccname" placeholder="Nombre*">
+						</div>
+						<div class = "form-group">
+						<label for="cccomentario" class="textnormal">Comentario</label>
+						<textarea type="text" class="form-control" name="cccomentario" id="cccomentario" placeholder="Comentario*"></textarea>
+                        <div class="btn-group" role="group" aria-label="">
+						<button type="summit" name="accion" id="publicarcomentario" class="btn btn-success">Publicar</button>
+						</div>
+                    </div>
+                    <p class="textnormal">Comentarios Publicados</p>
+                    <div class="comentariosplace" id="podcomentarios">
+                        
+                    </div>
+                    </div>
+                </div>
+
+                <div class="morevid">
+                    <p class="text-center textnormal">Mas Podcasts</p>
+                    <hr>
+                    <div id="morepodcastzone" class="comentariosplace"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <p style="display: none;" id="ipzone"></p>
+    <script type="application/javascript">
+        function getIP(json) {
+          document.getElementById("ipzone").innerHTML = json.ip
+        }
+      </script>
+    <script src="js/podcastlibrary.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
